@@ -38,28 +38,3 @@ class Solution {
 }
 
 
-Optimal 
-
- Arrays.sort(nums);
-        int[] ans=new int[2];
-         int i=0;
-         int j=nums.length-1;
-        
-        while(i<j){
-             int sum=nums[i]+nums[j];
-             if(sum==target){
-                 ans[0]=i;
-                 ans[1]=j;
-                 return ans;
-             }
-             else{
-                 if(sum>target){
-                     j--;
-                 }
-                 else{
-                     i++;
-                 }
-             }
-         }
-
-         return ans;
